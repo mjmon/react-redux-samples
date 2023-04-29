@@ -7,14 +7,16 @@ const Counter = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <button className="" onClick={() => dispatch(increment)}>
-        Increment
-      </button>
-      <span>{count}</span>
-      <button className="" onClick={() => dispatch(decrement)}>
-        Decrement
-      </button>
+    <div>
+      <div className="flex flex-col items-center justify-center h-screen">
+        <button className="" onClick={() => dispatch(increment())}>
+          Increment
+        </button>
+        <span>{count}</span>
+        <button className="" onClick={() => dispatch(decrement())}>
+          Decrement
+        </button>
+      </div>
     </div>
   );
 };

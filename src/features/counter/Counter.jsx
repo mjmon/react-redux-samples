@@ -13,25 +13,27 @@ const Counter = () => {
   const [incrementAmount, setIncrementAmount] = useState("2");
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <div className="">
-        <button className="" onClick={() => dispatch(increment())}>
-          Increment
+    <div className="flex flex-col items-center justify-center ">
+      <div className="rrow">
+        <button className="button" onClick={() => dispatch(increment())}>
+          +
         </button>
-        <span>{count}</span>
-        <button className="" onClick={() => dispatch(decrement())}>
-          Decrement
+        <span className="text-[78px] px-[16px] mt-[2px]">{count}</span>
+        <button className="button" onClick={() => dispatch(decrement())}>
+          -
         </button>
       </div>
 
-      <div>
+      <div className="rrow">
         <input
+          className="textbox"
           type="text"
           aria-label="Set increment amount"
           value={incrementAmount}
           onChange={(e) => setIncrementAmount(e.target.value)}
         />
         <button
+          className="button"
           onClick={() => {
             dispatch(incrementByAmount(Number(incrementAmount)));
           }}
@@ -39,6 +41,7 @@ const Counter = () => {
           Add Amount
         </button>
         <button
+          className="button  ml-[8px]"
           onClick={() => dispatch(incrementAsync(Number(incrementAmount)))}
         >
           Add Async

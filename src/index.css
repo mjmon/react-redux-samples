@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.rrow {
+  @apply flex flex-row items-center justify-center;
+}
+
+.button {
+  @apply text-[32px] px-[12px] bg-fadeViolet text-deepViolet pb-[4px] cursor-pointer rounded-[2px];
+}
+
+.textbox {
+  @apply text-[32px] p-[2px] w-[64px] text-center mr-[8px] border-[1px] border-black;
+}

@@ -4,7 +4,13 @@ import viteLogo from "/vite.svg";
 import Counter from "./features/counter/Counter";
 
 function App() {
-  return <Counter />;
+  return (
+    <div className="text-center">
+      <div className="flex flex-col items-center justify-center min-h-screen">
+        <Counter />
+      </div>
+    </div>
+  );
 }
 
 export default App;

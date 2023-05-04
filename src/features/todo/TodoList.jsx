@@ -6,14 +6,14 @@ const TodoList = () => {
   const dispatch = useDispatch();
   const todoList = useSelector((state) => state.todoList);
 
-  const onTap = (id) => {
-    console.log(`TodoList onTap: ${id}`);
+  const onToggle = (id) => {
+    console.log(`onToggle: ${id}`);
   };
 
   return (
     <ul>
       {todoList.map((t) => (
-        <Todo key={t.id} todo={t} onTap={() => onTap(t.id)} />
+        <Todo key={t.id} todo={t} onTap={() => onToggle(t.id)} />
       ))}
     </ul>
   );

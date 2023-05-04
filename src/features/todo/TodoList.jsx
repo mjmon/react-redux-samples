@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Todo from "./Todo";
+import { toggleTodo } from "./todoSlice";
 
 const TodoList = () => {
   const dispatch = useDispatch();
@@ -8,6 +9,11 @@ const TodoList = () => {
 
   const onToggle = (id) => {
     console.log(`onToggle: ${id}`);
+    dispatch(
+      toggleTodo({
+        id: id,
+      })
+    );
   };
 
   return (

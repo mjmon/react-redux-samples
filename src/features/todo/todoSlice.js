@@ -12,7 +12,7 @@ export const todoListSlice = createSlice({
         {
           id: uuidv4(),
           complete: false,
-          todo: todo,
+          title: todo,
         },
       ];
     },

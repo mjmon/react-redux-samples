@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import Counter from "./features/counter/Counter";
 import AddTodo from "./features/todo/AddTodo";
+import TodoList from "./features/todo/TodoList";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         {/* <Counter /> */}
 
         <AddTodo />
+        <TodoList />
       </div>
     </div>
   );
